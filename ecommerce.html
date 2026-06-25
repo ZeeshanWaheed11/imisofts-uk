@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-commerce & Shopify Development in the UK | imisofts</title>
+<meta name="description" content="Shopify stores and apps that convert and are found by AI shoppers. From build to conversion optimisation.">
+<link rel="canonical" href="https://imisofts.uk/ecommerce">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="alternate" hreflang="nl" href="https://imisofts.nl/ecommerce">
+<link rel="alternate" hreflang="de" href="https://imisofts.de/ecommerce">
+<link rel="alternate" hreflang="en-GB" href="https://imisofts.uk/ecommerce">
+<link rel="alternate" hreflang="en" href="https://imisofts.com/">
+<link rel="alternate" hreflang="x-default" href="https://imisofts.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="E-commerce &amp; Shopify Development in the UK | imisofts">
+<meta property="og:description" content="Shopify stores and apps that convert and are found by AI shoppers. From build to conversion optimisation.">
+<meta property="og:url" content="https://imisofts.uk/ecommerce">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="imisofts">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='18' width='6' height='10' rx='1.5' fill='%23F45407'/%3E%3Crect x='13' y='11' width='6' height='17' rx='1.5' fill='%23F45407'/%3E%3Crect x='22' y='4' width='6' height='24' rx='1.5' fill='%23F45407'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"imisofts","url":"https://imisofts.uk/","areaServed":"GB","email":"growth@imisofts.com","knowsLanguage":["en-GB","en"],"sameAs":["https://imisofts.com/","https://imisofts.nl/","https://imisofts.de/","https://imisofts.uk/"]}</script>
+<style>
+:root{
+  --ink:#0f172a; --ink-2:#1e293b; --text:#1f2430; --muted:#64707f; --line:#e8ebf0;
+  --bg:#ffffff; --soft:#f7f9fc; --accent:#F45407; --accent-2:#ff7a3c; --accent-deep:#c8410a;
+  --maxw:1200px; --grad:linear-gradient(135deg,#F45407,#ff7a3c);
+  --sh-sm:0 1px 2px rgba(15,23,42,.06); --sh:0 12px 28px -12px rgba(15,23,42,.16); --sh-lg:0 28px 60px -22px rgba(15,23,42,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+img{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,4vw,32px)}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.12;font-weight:700;color:var(--ink)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--accent-deep);background:rgba(244,84,7,.08);border:1px solid rgba(244,84,7,.16);padding:6px 13px;border-radius:100px}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(244,84,7,.16)}
+.icn{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 22px;border-radius:10px;border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s,border-color .2s;white-space:nowrap;font-family:inherit}
+.btn .icn{width:18px;height:18px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 22px -8px rgba(244,84,7,.55)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px -8px rgba(244,84,7,.6)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:#cdd4de;transform:translateY(-2px)}
+.btn-lg{padding:15px 28px;font-size:16px}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,box-shadow .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,4vw,32px)}
+.nav.scrolled{background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(14px);border-bottom-color:var(--line)}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:20px;letter-spacing:-.03em;color:var(--ink)}
+.logo svg{width:25px;height:25px}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a.navlink{padding:9px 13px;border-radius:9px;font-size:15px;font-weight:500;color:#3c4655;transition:.15s}
+.nav-links a.navlink:hover{background:var(--soft);color:var(--ink)}
+.has-drop{position:relative}
+.has-drop>a::after{content:"";display:inline-block;width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-left:6px;vertical-align:2px;opacity:.5}
+.drop{position:absolute;top:calc(100% + 6px);left:0;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh-lg);padding:10px;width:340px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s}
+.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateY(0)}
+.drop a{display:flex;gap:13px;padding:11px;border-radius:11px;transition:.15s;align-items:center}
+.drop a:hover{background:var(--soft)}
+.drop .di{width:38px;height:38px;border-radius:10px;background:rgba(244,84,7,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;flex:none}
+.drop .dt{font-weight:600;font-size:14.5px;color:var(--ink);display:block}
+.drop .dd{font-size:12.5px;color:var(--muted);line-height:1.35}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang{display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;font-size:13px;font-weight:600}
+.lang button{padding:7px 11px;background:#fff;color:var(--muted);border:none;cursor:pointer;transition:.15s;font-family:inherit}
+.lang button.active{background:var(--ink);color:#fff}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;cursor:pointer;padding:9px;color:var(--ink)}
+
+/* HERO */
+.hero{padding:128px 0 88px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(48% 42% at 80% 6%,rgba(244,84,7,.13),transparent 70%),radial-gradient(40% 38% at 5% 78%,rgba(244,84,7,.07),transparent 70%)}
+.hero-grid{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(circle at 50% 26%,#000,transparent 70%);mask-image:radial-gradient(circle at 50% 26%,#000,transparent 70%);opacity:.45}
+.hero-wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(36px,5vw,60px);font-weight:800;margin:22px 0 20px;letter-spacing:-.035em}
+.hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero .lead{font-size:clamp(16px,2.2vw,19px);color:var(--muted);max-width:540px;margin-bottom:30px}
+.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:38px}
+.hero-stats{display:flex;gap:clamp(20px,4vw,38px);flex-wrap:wrap}
+.hero-stats .s b{display:block;font-size:clamp(22px,3vw,27px);font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.hero-stats .s span{font-size:13px;color:var(--muted)}
+.hero-visual{position:relative}
+.snap{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh-lg);padding:24px;z-index:2}
+.snap-glow{position:absolute;top:-26px;right:-14px;width:190px;height:190px;background:var(--grad);filter:blur(58px);opacity:.2;z-index:1;border-radius:50%}
+.snap h4{font-size:11px;letter-spacing:.12em;color:var(--muted);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.snap h4 .icn{width:14px;height:14px;color:var(--accent)}
+.snap-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.snap-row:last-child{border:none}
+.snap-row span{color:var(--muted)}
+.snap-row b{font-weight:700;color:var(--ink)}
+.snap-row .up{color:#16a34a}
+.chip{position:absolute;display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh);border-radius:12px;padding:9px 13px;font-size:13px;font-weight:600;z-index:3}
+.chip .icn{width:15px;height:15px;color:var(--accent)}
+.chip .pulse{width:8px;height:8px;border-radius:50%;background:#16a34a;box-shadow:0 0 0 0 rgba(22,163,74,.5);animation:pulse 2.4s infinite}
+.chip.c1{top:-18px;left:-26px;animation:float 5s ease-in-out infinite}
+.chip.c2{bottom:30px;left:-40px;animation:float 5s ease-in-out infinite 1.6s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,163,74,.5)}70%{box-shadow:0 0 0 9px rgba(22,163,74,0)}100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}}
+
+/* STRIP */
+.strip{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft)}
+.strip p{text-align:center;font-size:12px;letter-spacing:.13em;color:var(--muted);font-weight:700;margin-bottom:18px}
+.strip-logos{display:flex;justify-content:center;align-items:center;gap:clamp(20px,4vw,44px);flex-wrap:wrap;font-weight:700;font-size:clamp(15px,2.4vw,18px);color:#9aa3b0}
+.strip-logos span{transition:.2s}
+.strip-logos span:hover{color:var(--ink)}
+
+/* SECTIONS */
+.sec{padding:clamp(64px,9vw,96px) 0}
+.sec-head{max-width:640px;margin-bottom:clamp(36px,5vw,52px)}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-size:clamp(28px,4vw,42px);margin:13px 0 14px;font-weight:700}
+.sec-head p{font-size:clamp(16px,2.2vw,18px);color:var(--muted)}
+
+/* SERVICES */
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;transition:transform .22s,box-shadow .22s,border-color .22s;overflow:hidden}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg);border-color:rgba(244,84,7,.28)}
+.card .badge{width:50px;height:50px;border-radius:13px;background:rgba(244,84,7,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.card .badge .icn{width:25px;height:25px}
+.card h3{font-size:20px;margin-bottom:9px;font-weight:700}
+.card p{color:var(--muted);font-size:14.5px;margin-bottom:16px}
+.card .more{font-weight:600;color:var(--accent-deep);font-size:14.5px;display:inline-flex;gap:6px;align-items:center;transition:gap .2s}
+.card .more .icn{width:16px;height:16px}
+.card:hover .more{gap:10px}
+
+/* WHY */
+.why{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-item .wb{width:44px;height:44px;border-radius:11px;background:#fff;border:1px solid var(--line);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.why-item h3{font-size:18px;margin-bottom:8px;font-weight:700}
+.why-item p{font-size:14.5px;color:var(--muted)}
+
+/* PROCESS */
+.process{background:linear-gradient(135deg,var(--ink),var(--ink-2));color:#fff;border-radius:28px;padding:clamp(48px,7vw,76px) 0;overflow:hidden;position:relative}
+.process::before{content:"";position:absolute;top:-80px;right:-60px;width:300px;height:300px;background:var(--grad);filter:blur(90px);opacity:.18;border-radius:50%}
+.process .container{max-width:1060px;position:relative}
+.process .sec-head h2{color:#fff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.step{padding:28px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px}
+.step .sn{width:42px;height:42px;border-radius:11px;background:rgba(244,84,7,.18);color:var(--accent-2);display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:16px}
+.step h3{color:#fff;font-size:19px;margin-bottom:9px;font-weight:700}
+.step p{color:#aab4c2;font-size:14.5px}
+
+/* CTA BAND */
+.ctaband{padding:clamp(56px,8vw,90px) 0}
+.ctabox{position:relative;background:var(--grad);border-radius:28px;padding:clamp(40px,6vw,62px) clamp(24px,4vw,40px);text-align:center;overflow:hidden;box-shadow:var(--sh-lg)}
+.ctabox::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 18%,rgba(255,255,255,.22),transparent 52%)}
+.ctabox h2{color:#fff;font-size:clamp(26px,3.6vw,40px);position:relative;margin-bottom:13px}
+.ctabox p{color:rgba(255,255,255,.92);font-size:clamp(16px,2.2vw,18px);position:relative;margin:0 auto 26px;max-width:560px}
+.ctabox .btn{background:#fff;color:var(--ink);position:relative}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.06fr;gap:clamp(32px,5vw,56px);align-items:start}
+.contact-left h2{font-size:clamp(26px,3.6vw,40px);margin:13px 0 16px}
+.contact-left .lead{color:var(--muted);font-size:17px;margin-bottom:26px}
+.contact-pts{list-style:none}
+.contact-pts li{display:flex;gap:12px;align-items:center;margin-bottom:13px;font-weight:500}
+.contact-pts .ck{width:24px;height:24px;border-radius:50%;background:rgba(22,163,74,.12);color:#16a34a;display:flex;align-items:center;justify-content:center;flex:none}
+.contact-pts .ck .icn{width:14px;height:14px;stroke-width:2.5}
+.form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,4vw,30px);box-shadow:var(--sh)}
+.form label{display:block;font-size:13.5px;font-weight:600;margin-bottom:7px;color:var(--ink)}
+.form .fg{margin-bottom:17px}
+.form input,.form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:11px;font-family:inherit;font-size:15px;background:var(--soft);color:var(--text);transition:.15s}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--accent);background:#fff;box-shadow:0 0 0 4px rgba(244,84,7,.1)}
+.form textarea{resize:vertical;min-height:108px}
+.form .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin-bottom:18px}
+.form .consent input{width:auto;margin-top:3px;flex:none}
+.form .btn{width:100%;justify-content:center}
+.hp{position:absolute;left:-9999px;width:1px;height:1px}
+.formnote{font-size:12px;color:var(--muted);text-align:center;margin-top:11px}
+
+/* FOOTER */
+.footer{background:var(--ink);color:#c2cad6;padding:64px 0 28px}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:42px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer .logo{color:#fff;margin-bottom:15px}
+.footer-top .blurb{font-size:14px;color:#8b95a4;max-width:280px;margin-bottom:15px}
+.footer .partof{font-size:13.5px;color:#8b95a4}
+.footer .partof a{color:var(--accent-2);font-weight:600}
+.fcol h5{color:#fff;font-size:12px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:15px}
+.fcol a{display:block;font-size:14px;color:#9aa3b0;padding:5px 0;transition:.15s}
+.fcol a:hover{color:#fff}
+.footer-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:13px;color:#7a8595}
+.footer-bot .legal{display:flex;gap:20px}
+.footer-bot .legal a:hover{color:#fff}
+
+/* FAB */
+.fab{position:fixed;bottom:22px;right:22px;z-index:90;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;padding:12px 19px;border-radius:100px;font-weight:600;font-size:14.5px;box-shadow:var(--sh-lg);transition:.2s}
+.fab .icn{width:16px;height:16px;color:var(--accent-2)}
+.fab:hover{transform:translateY(-3px);background:#0b1220}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .chip{display:none}
+  .hero-wrap{gap:40px}
+}
+@media(max-width:900px){
+  .nav-links{display:none}
+  .nav-right .btn-primary{display:none}
+  .burger{display:inline-flex}
+  .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid var(--line);padding:12px 20px 18px;gap:2px;box-shadow:var(--sh)}
+  .nav-links.open .has-drop>a::after{display:none}
+  .nav-links.open .drop{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;width:auto;padding:4px 0 4px 8px}
+  .nav-links.open .navlink{padding:12px 10px;font-size:16px}
+  .hero{padding:108px 0 64px}
+  .hero-wrap{grid-template-columns:1fr;gap:44px}
+  .hero-visual{max-width:440px;margin:0 auto;width:100%}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media(max-width:560px){
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{justify-content:center}
+  .bento{grid-template-columns:1fr;gap:16px}
+  .why-grid{grid-template-columns:1fr}
+  .process{border-radius:16px}
+  .footer-top{grid-template-columns:1fr;gap:26px}
+  .footer-bot{justify-content:center;text-align:center}
+  .fab span{display:none}
+  .fab{padding:13px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+.phero{padding:128px 0 56px;position:relative;overflow:hidden;text-align:center}
+.phero .container{max-width:840px}
+.phero h1{font-size:clamp(32px,4.6vw,52px);font-weight:800;letter-spacing:-.035em;margin:20px 0 18px;color:var(--ink);line-height:1.12}
+.phero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.phero .lead{font-size:clamp(16px,2.2vw,19px);color:var(--muted);max-width:640px;margin:0 auto 28px}
+.phero .hero-cta{justify-content:center;display:flex;gap:13px;flex-wrap:wrap}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.offer{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;transition:.2s}
+.offer:hover{box-shadow:var(--sh);transform:translateY(-3px);border-color:rgba(244,84,7,.25)}
+.offer .badge{width:42px;height:42px;border-radius:11px;background:rgba(244,84,7,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.offer h3{font-size:17px;margin-bottom:7px;font-weight:700;color:var(--ink)}
+.offer p{font-size:14px;color:var(--muted)}
+.faq{max-width:800px;margin:0 auto}
+.faq details{border:1px solid var(--line);border-radius:13px;margin-bottom:12px;background:#fff}
+.faq summary{padding:18px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;color:var(--ink);font-size:15.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;color:var(--accent);font-weight:300;line-height:1}
+.faq details[open] summary::after{content:"\2013"}
+.faq .fa{padding:0 22px 20px;color:var(--muted);font-size:15px}
+.prose{max-width:760px;margin:0 auto}
+.prose h2{font-size:23px;margin:30px 0 12px;font-weight:700;color:var(--ink)}
+.prose p{color:var(--muted);margin-bottom:14px}
+.prose ul{color:var(--muted);margin:0 0 14px 20px}.prose li{margin-bottom:7px}
+.prose a{color:var(--accent-deep);font-weight:600}
+.nf{text-align:center;padding:150px 0 110px}
+.nf h1{font-size:clamp(72px,12vw,110px);font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.nf p{font-size:19px;color:var(--muted);margin:12px 0 26px}
+@media(max-width:900px){.offer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.offer-grid{grid-template-columns:1fr}.phero{padding:104px 0 44px}}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav"><div class="nav-inner">
+<a href="/" class="logo" aria-label="imisofts home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="18" width="6" height="10" rx="1.5" fill="#F45407"/><rect x="13" y="11" width="6" height="17" rx="1.5" fill="#F45407"/><rect x="22" y="4" width="6" height="24" rx="1.5" fill="#F45407"/></svg> imisofts</a>
+<div class="nav-links" id="navlinks">
+<div class="has-drop"><a href="/#diensten" class="navlink" data-en="Services">Services</a><div class="drop"><a href="/ai-automation"><span class="di"><svg class="icn" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></span><span><span class="dt" data-en="AI Automation &amp; Agents">AI Automation & Agents</span><span class="dd" data-en="AI agents that take real work off your team.">AI agents that take real work off your team.</span></span></a><a href="/lead-generation"><span class="di"><svg class="icn" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span><span class="dt" data-en="Lead Generation &amp; Cold Email">Lead Generation & Cold Email</span><span class="dd" data-en="Done-for-you outbound that fills your pipeline.">Done-for-you outbound that fills your pipeline.</span></span></a><a href="/web-development"><span class="di"><svg class="icn" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span><span><span class="dt" data-en="Web, App &amp; SaaS">Web, App & SaaS</span><span class="dd" data-en="Fast sites, apps and SaaS, shipped in weeks.">Fast sites, apps and SaaS, shipped in weeks.</span></span></a><a href="/ecommerce"><span class="di"><svg class="icn" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span><span><span class="dt" data-en="E-commerce &amp; Shopify">E-commerce & Shopify</span><span class="dd" data-en="Shopify stores that convert and are AI-visible.">Shopify stores that convert and are AI-visible.</span></span></a></div></div>
+<a href="/#werkwijze" class="navlink" data-en="Process">Process</a>
+<a href="/#waarom" class="navlink" data-en="Why us">Why imisofts</a>
+<a href="/contact" class="navlink">Contact</a>
+</div>
+<div class="nav-right">
+
+<a href="/contact" class="btn btn-primary" data-en="Free audit">Free audit</a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><svg class="icn" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+</div></div></nav>
+<header class="phero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="container">
+<span class="eyebrow"><span class="dot"></span><span data-en="E-commerce">E-commerce</span></span>
+<h1 data-en="Shopify stores that convert and &lt;span class=&quot;hl&quot;&gt;get found&lt;/span&gt;.">Shopify stores that convert and <span class="hl">get found</span>.</h1>
+<p class="lead" data-en="Conversion-first stores and custom apps, ready for AI-driven shopping and search.">Conversion-first stores and custom apps, ready for AI-driven shopping and search.</p>
+<div class="hero-cta"><a href="/contact" class="btn btn-primary btn-lg" data-en="Get a free audit">Get a free audit <svg class="icn" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="#aanbod" class="btn btn-ghost btn-lg" data-en="What we deliver">What we deliver</a></div>
+</div></header>
+<section class="sec" id="aanbod"><div class="container"><div class="sec-head center reveal"><h2 data-en="What we deliver">What we deliver</h2><p data-en="From a new store to more revenue from your existing Shopify.">From a new store to more revenue from your existing Shopify.</p></div>
+<div class="offer-grid"><div class="offer reveal"><div class="badge"><svg class="icn" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div><h3 data-en="Shopify development">Shopify development</h3><p data-en="Fast, converting stores custom built or rebuilt.">Fast, converting stores custom built or rebuilt.</p></div><div class="offer reveal"><div class="badge"><svg class="icn" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div><h3 data-en="Custom Shopify apps">Custom Shopify apps</h3><p data-en="Apps and features that do not exist out of the box.">Apps and features that do not exist out of the box.</p></div><div class="offer reveal"><div class="badge"><svg class="icn" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3 data-en="Conversion optimisation">Conversion optimisation</h3><p data-en="Product pages, checkout and flows that turn more visitors into customers.">Product pages, checkout and flows that turn more visitors into customers.</p></div><div class="offer reveal"><div class="badge"><svg class="icn" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></div><h3 data-en="AI visibility">AI visibility</h3><p data-en="Machine-readable product pages and feeds, found by AI shoppers.">Machine-readable product pages and feeds, found by AI shoppers.</p></div><div class="offer reveal"><div class="badge"><svg class="icn" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0114.9-3.4L23 10M1 14l4.6 4.4A9 9 0 0020.5 15"/></svg></div><h3 data-en="Migrations">Migrations</h3><p data-en="Safe migration to Shopify without losing SEO or revenue.">Safe migration to Shopify without losing SEO or revenue.</p></div><div class="offer reveal"><div class="badge"><svg class="icn" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 data-en="Maintenance &amp; support">Maintenance & support</h3><p data-en="Ongoing maintenance, updates and support after launch.">Ongoing maintenance, updates and support after launch.</p></div></div></div></section>
+<section class="sec why"><div class="container"><div class="sec-head center reveal"><h2 data-en="Why imisofts for e-commerce">Why imisofts for e-commerce</h2></div><div class="why-grid"><div class="why-item reveal"><div class="wb"><svg class="icn" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3 data-en="Built to convert">Built to convert</h3><p data-en="Every decision is about more revenue per visitor, not pretty pictures.">Every decision is about more revenue per visitor, not pretty pictures.</p></div><div class="why-item reveal"><div class="wb"><svg class="icn" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></div><h3 data-en="Ready for AI shoppers">Ready for AI shoppers</h3><p data-en="We make your store readable for the AI assistants that increasingly drive purchases.">We make your store readable for the AI assistants that increasingly drive purchases.</p></div><div class="why-item reveal"><div class="wb"><svg class="icn" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3 data-en="Fast and scalable">Fast and scalable</h3><p data-en="Fast load times and a stack that grows with your revenue.">Fast load times and a stack that grows with your revenue.</p></div></div></div></section>
+<section class="sec"><div class="container"><div class="sec-head center reveal"><span class="eyebrow"><span class="dot"></span>FAQ</span><h2 data-en="Frequently asked questions">Frequently asked questions</h2></div><div class="faq"><details class="reveal"><summary data-en="Do you build new stores or improve existing ones?">Do you build new stores or improve existing ones?</summary><div class="fa" data-en="Both. We build new Shopify stores and optimise or migrate existing ones.">Both. We build new Shopify stores and optimise or migrate existing ones.</div></details><details class="reveal"><summary data-en="What is AI visibility?">What is AI visibility?</summary><div class="fa" data-en="More shoppers buy through AI assistants. We make your product data machine-readable so those agents can find and recommend your products.">More shoppers buy through AI assistants. We make your product data machine-readable so those agents can find and recommend your products.</div></details><details class="reveal"><summary data-en="Can you build custom apps?">Can you build custom apps?</summary><div class="fa" data-en="Yes. We build custom Shopify apps and features that do not exist by default.">Yes. We build custom Shopify apps and features that do not exist by default.</div></details><details class="reveal"><summary data-en="Do you help with migration?">Do you help with migration?</summary><div class="fa" data-en="Yes. We handle a safe migration to Shopify preserving SEO, URLs and revenue.">Yes. We handle a safe migration to Shopify preserving SEO, URLs and revenue.</div></details></div></div></section>
+<section class="ctaband"><div class="container"><div class="ctabox reveal">
+<h2 data-en="Ready for AI that actually delivers?">Ready for AI that actually delivers?</h2><p data-en="Get a free audit and we will show you the fastest path to pipeline and revenue.">Get a free audit and we will show you the fastest path to pipeline and revenue.</p>
+<a href="/contact" class="btn btn-lg" data-en="Get a free audit">Get a free audit <svg class="icn" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></div></section>
+<footer class="footer"><div class="container">
+<div class="footer-top">
+<div><div class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="18" width="6" height="10" rx="1.5" fill="#F45407"/><rect x="13" y="11" width="6" height="17" rx="1.5" fill="#F45407"/><rect x="22" y="4" width="6" height="24" rx="1.5" fill="#F45407"/></svg>imisofts</div>
+<p class="blurb" data-en="AI automation, lead generation, and modern development for ambitious teams in the UK.">AI automation, lead generation, and modern development for ambitious teams in the UK.</p>
+<p class="partof">Part of imisofts. Visit <a href="https://imisofts.com/">imisofts.com</a>.</p></div>
+<div class="fcol"><h5 data-en="Services">Services</h5><a href="/ai-automation" data-en="AI Automation &amp; Agents">AI Automation & Agents</a><a href="/lead-generation" data-en="Lead Generation &amp; Cold Email">Lead Generation & Cold Email</a><a href="/web-development" data-en="Web, App &amp; SaaS">Web, App & SaaS</a><a href="/ecommerce" data-en="E-commerce &amp; Shopify">E-commerce & Shopify</a></div>
+<div class="fcol"><h5 data-en="Company">Company</h5>
+<a href="/#waarom" data-en="Why imisofts">Why imisofts</a>
+<a href="/#werkwijze" data-en="Process">Process</a>
+<a href="/contact">Contact</a>
+<a href="https://imisofts.com/blog/">Blog</a></div>
+<div class="fcol"><h5 data-en="Get in touch">Get in touch</h5>
+<a href="mailto:growth@imisofts.com">growth@imisofts.com</a>
+<a href="/contact" data-en="Free audit">Free audit</a>
+<a href="https://linkedin.com/company/imisofts">LinkedIn</a></div>
+</div>
+<div class="footer-bot"><span>&copy; <span id="yr"></span> imisofts. <span data-en="All rights reserved.">All rights reserved.</span></span>
+<div class="legal"><a href="/privacy" data-en="Privacy">Privacy</a><a href="https://imisofts.com/">imisofts.com</a></div></div>
+</div></footer>
+<a href="/contact" class="fab"><svg class="icn" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span data-en="Free audit">Free audit</span></a>
+<script>
+(function(){
+  var nav=document.getElementById('nav'), links=document.getElementById('navlinks'), burger=document.getElementById('burger');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>16)};onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');burger.setAttribute('aria-expanded','false')})});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  var btns=document.querySelectorAll('.lang button');
+  function setLang(l){document.documentElement.lang=l;btns.forEach(function(b){b.classList.toggle('active',b.dataset.lang===l)});
+    document.querySelectorAll('[data-en]').forEach(function(el){if(!el.dataset.nl){el.dataset.nl=el.innerHTML;}el.innerHTML=l==='en'?el.getAttribute('data-en'):el.dataset.nl;});}
+  btns.forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
+  var f=document.getElementById('leadform');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();if(f.website.value)return;var b=f.querySelector('button[type=submit]');var t=b.innerHTML;b.textContent=document.documentElement.lang==='en'?'Sent':'Verzonden';b.style.background='#16a34a';setTimeout(function(){f.reset();b.innerHTML=t;b.style.background='';},2200);});}
+})();
+</script>
+</body></html>
