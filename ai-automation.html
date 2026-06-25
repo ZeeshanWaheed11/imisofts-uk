@@ -25,10 +25,10 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"imisofts","url":"https://imisofts.uk/","areaServed":"GB","email":"growth@imisofts.com","knowsLanguage":["en-GB","en"],"sameAs":["https://imisofts.com/","https://imisofts.nl/","https://imisofts.de/","https://imisofts.uk/"]}</script>
 <style>
 :root{
-  --ink:#161318; --ink-2:#221d24; --text:#3a3540; --muted:#857f8c; --line:#ece7e0;
-  --bg:#faf7f2; --soft:#f3eee6; --card:#ffffff; --accent:#F45407; --accent-2:#ff7a3c; --accent-deep:#c8410a;
+  --ink:#0f172a; --ink-2:#1e293b; --text:#334155; --muted:#64748b; --line:#e7eaf0;
+  --bg:#ffffff; --soft:#f7f9fc; --card:#ffffff; --accent:#F45407; --accent-2:#ff7a3c; --accent-deep:#c8410a;
   --maxw:1180px; --grad:linear-gradient(135deg,#F45407,#ff7a3c);
-  --sh-sm:0 1px 2px rgba(40,28,16,.05); --sh:0 16px 38px -18px rgba(40,28,16,.18); --sh-lg:0 40px 80px -30px rgba(40,28,16,.3);
+  --sh-sm:0 1px 2px rgba(15,23,42,.05); --sh:0 16px 38px -18px rgba(15,23,42,.16); --sh-lg:0 40px 80px -30px rgba(15,23,42,.22);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -53,13 +53,12 @@ h1,h2,h3{letter-spacing:-.02em;line-height:1.12;font-weight:700;color:var(--ink)
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0;transition:padding .45s cubic-bezier(.4,0,.2,1)}
 .nav.scrolled{padding:12px clamp(14px,4vw,28px)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px;max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,4vw,32px);border:1px solid transparent;border-radius:18px;transition:height .45s cubic-bezier(.4,0,.2,1),max-width .45s cubic-bezier(.4,0,.2,1),background .35s,box-shadow .35s,border-color .35s,padding .45s}
-.nav.scrolled .nav-inner{height:62px;max-width:940px;padding:0 10px 0 22px;background:rgba(255,253,250,.86);backdrop-filter:saturate(180%) blur(18px);border-color:var(--line);box-shadow:0 16px 44px -18px rgba(40,28,16,.26)}
+.nav.scrolled .nav-inner{height:62px;max-width:940px;padding:0 14px 0 22px;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(18px);border-color:var(--line);box-shadow:0 16px 44px -18px rgba(15,23,42,.18)}
 .nav.scrolled .nav-right .btn-primary{padding:9px 18px;font-size:14px}
 .nav.scrolled .nav-links a.navlink{padding:8px 12px}
-.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:20px;letter-spacing:-.03em;color:var(--ink)}
-.logo svg{width:25px;height:25px}
-.logo .lw{transition:opacity .3s,max-width .4s cubic-bezier(.4,0,.2,1);overflow:hidden;white-space:nowrap;max-width:120px}
-.nav.scrolled .logo .lw{opacity:0;max-width:0}
+.logo{display:flex;align-items:center;gap:9px}
+.logo svg{height:27px;width:auto;display:block}
+.nav.scrolled .logo svg{height:25px}
 .nav-links{display:flex;align-items:center;gap:2px}
 .nav-links a.navlink{padding:9px 13px;border-radius:9px;font-size:15px;font-weight:500;color:#3c4655;transition:.15s}
 .nav-links a.navlink:hover{background:var(--soft);color:var(--ink)}
@@ -80,7 +79,7 @@ h1,h2,h3{letter-spacing:-.02em;line-height:1.12;font-weight:700;color:var(--ink)
 
 /* HERO */
 .hero{padding:128px 0 88px;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(48% 42% at 80% 6%,rgba(244,84,7,.13),transparent 70%),radial-gradient(40% 38% at 5% 78%,rgba(244,84,7,.07),transparent 70%)}
+.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(46% 40% at 82% 4%,rgba(244,84,7,.07),transparent 70%),radial-gradient(38% 36% at 3% 80%,rgba(244,84,7,.04),transparent 70%)}
 .hero-grid{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(circle at 50% 26%,#000,transparent 70%);mask-image:radial-gradient(circle at 50% 26%,#000,transparent 70%);opacity:.45}
 .hero-wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
 .hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:800;margin:22px 0 22px;letter-spacing:-.04em;line-height:1.04}
@@ -109,11 +108,14 @@ h1,h2,h3{letter-spacing:-.02em;line-height:1.12;font-weight:700;color:var(--ink)
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,163,74,.5)}70%{box-shadow:0 0 0 9px rgba(22,163,74,0)}100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}}
 
 /* STRIP */
-.strip{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft)}
-.strip p{text-align:center;font-size:12px;letter-spacing:.13em;color:var(--muted);font-weight:700;margin-bottom:18px}
-.strip-logos{display:flex;justify-content:center;align-items:center;gap:clamp(20px,4vw,44px);flex-wrap:wrap;font-weight:700;font-size:clamp(15px,2.4vw,18px);color:#9aa3b0}
-.strip-logos span{transition:.2s}
-.strip-logos span:hover{color:var(--ink)}
+.strip{padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft);overflow:hidden}
+.strip p{text-align:center;font-size:12px;letter-spacing:.13em;color:var(--muted);font-weight:700;margin-bottom:22px}
+.marquee{display:flex;width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;align-items:center;gap:clamp(40px,6vw,72px);padding-right:clamp(40px,6vw,72px);flex-shrink:0;min-width:max-content;animation:scroll-left 34s linear infinite}
+.marquee-track img{height:clamp(20px,2.7vw,28px);width:auto;filter:grayscale(100%);opacity:.62;transition:opacity .25s,filter .25s}
+.marquee-track img:hover{filter:grayscale(0);opacity:1}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scroll-left{from{transform:translateX(0)}to{transform:translateX(-100%)}}
 
 /* SECTIONS */
 .sec{padding:clamp(64px,9vw,96px) 0}
@@ -313,7 +315,7 @@ h2 .hl,h3 .hl{font-style:italic;background:var(--grad);-webkit-background-clip:t
 </head>
 <body>
 <nav class="nav" id="nav"><div class="nav-inner">
-<a href="/" class="logo" aria-label="imisofts home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="18" width="6" height="10" rx="1.5" fill="#F45407"/><rect x="13" y="11" width="6" height="17" rx="1.5" fill="#F45407"/><rect x="22" y="4" width="6" height="24" rx="1.5" fill="#F45407"/></svg><span class="lw">imisofts</span></a>
+<a href="/" class="logo" aria-label="imisofts home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 256" role="img" aria-label="imisofts logo"><g fill="#F45407"><circle cx="48" cy="170" r="18"/><path d="M84,84 L136,84 L118,188 L66,188 Z"/><path d="M146,84 L198,84 L180,188 L128,188 Z"/></g><g transform="translate(200,188)"><text x="0" y="0" font-family="Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-weight="700" font-size="96" letter-spacing="-0.5" fill="#0F172A">imisofts</text></g></svg></a>
 <div class="nav-links" id="navlinks">
 <div class="has-drop"><a href="/#diensten" class="navlink" data-en="Services">Services</a><div class="drop"><a href="/ai-automation"><span class="di"><svg class="icn" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></span><span><span class="dt" data-en="AI Automation &amp; Agents">AI Automation & Agents</span><span class="dd" data-en="AI agents that take real work off your team.">AI agents that take real work off your team.</span></span></a><a href="/lead-generation"><span class="di"><svg class="icn" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span><span class="dt" data-en="Lead Generation &amp; Cold Email">Lead Generation & Cold Email</span><span class="dd" data-en="Done-for-you outbound that fills your pipeline.">Done-for-you outbound that fills your pipeline.</span></span></a><a href="/web-development"><span class="di"><svg class="icn" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span><span><span class="dt" data-en="Web, App &amp; SaaS">Web, App & SaaS</span><span class="dd" data-en="Fast sites, apps and SaaS, shipped in weeks.">Fast sites, apps and SaaS, shipped in weeks.</span></span></a><a href="/ecommerce"><span class="di"><svg class="icn" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span><span><span class="dt" data-en="E-commerce &amp; Shopify">E-commerce & Shopify</span><span class="dd" data-en="Shopify stores that convert and are AI-visible.">Shopify stores that convert and are AI-visible.</span></span></a></div></div>
 <a href="/#werkwijze" class="navlink" data-en="Process">Process</a>
@@ -341,7 +343,7 @@ h2 .hl,h3 .hl{font-style:italic;background:var(--grad);-webkit-background-clip:t
 </div></div></section>
 <footer class="footer"><div class="container">
 <div class="footer-top">
-<div><div class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="18" width="6" height="10" rx="1.5" fill="#F45407"/><rect x="13" y="11" width="6" height="17" rx="1.5" fill="#F45407"/><rect x="22" y="4" width="6" height="24" rx="1.5" fill="#F45407"/></svg>imisofts</div>
+<div><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 256" role="img" aria-label="imisofts logo"><g fill="#F45407"><circle cx="48" cy="170" r="18"/><path d="M84,84 L136,84 L118,188 L66,188 Z"/><path d="M146,84 L198,84 L180,188 L128,188 Z"/></g><g transform="translate(200,188)"><text x="0" y="0" font-family="Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-weight="700" font-size="96" letter-spacing="-0.5" fill="#ffffff">imisofts</text></g></svg></div>
 <p class="blurb" data-en="AI automation, lead generation, and modern development for ambitious teams in the UK.">AI automation, lead generation, and modern development for ambitious teams in the UK.</p>
 <p class="partof">Part of imisofts. Visit <a href="https://imisofts.com/">imisofts.com</a>.</p></div>
 <div class="fcol"><h5 data-en="Services">Services</h5><a href="/ai-automation" data-en="AI Automation &amp; Agents">AI Automation & Agents</a><a href="/lead-generation" data-en="Lead Generation &amp; Cold Email">Lead Generation & Cold Email</a><a href="/web-development" data-en="Web, App &amp; SaaS">Web, App & SaaS</a><a href="/ecommerce" data-en="E-commerce &amp; Shopify">E-commerce & Shopify</a></div>
